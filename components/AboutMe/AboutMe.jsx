@@ -74,7 +74,7 @@ export default function ScrollableTabsButtonAuto() {
               scrollButtons="auto"
               aria-label="scrollable auto tabs example"
             >
-              <Tab label="Poly Operations" {...a11yProps(0)} />
+              <Tab label="Poly Ops" {...a11yProps(0)} />
               <Tab label="Rapid 7" {...a11yProps(1)} />
               <Tab label="CWIB" {...a11yProps(2)} />
               <Tab label="HMC" {...a11yProps(3)} />
@@ -136,13 +136,48 @@ export default function ScrollableTabsButtonAuto() {
             </div>
           </TabPanel>
           <TabPanel value={value} index={2}>
-            <div className="header">
-              Data Structure Tutor | Harvey Mudd College
+            <div className="main">
+              <div className="header">
+                <span>
+                  <strong>Chief Technology Officer</strong> |
+                </span>{" "}
+                Claremont Women in Business
+              </div>
+              <div className="date">DEC 2018 - PRESENT</div>
+              <div className="info">
+                <ul>
+                  <li>
+                    Lead design project for official club website to reflect CWIB’s mission
+                  </li>
+                  <li>
+                    Recruit, train, and guide team of four women interested in  exploring technology, 
+                    coding, and website design 
+                  </li>
+                </ul>
+              </div>
             </div>
           </TabPanel>
           <TabPanel value={value} index={3}>
-            <div className="header">
-              Chief Technology Officer | Claremont Women in Business
+            <div className="main">
+              <div className="header">
+                <span>
+                  <strong>Data Structure Tutor</strong> |
+                </span>{" "}
+                Harvey Mudd College
+              </div>
+              <div className="date">JAN 2020 - PRESENT</div>
+              <div className="info">
+                <ul>
+                  <li>
+                    Work with 60 students to explain algorithmic problem-solving  techniques and
+                    core  concepts of CS
+                  </li>
+                  <li>
+                    Successfully analyze and debug uniquely written code (C++) and provide 
+                    constructive feedback and support
+                  </li>
+                </ul>
+              </div>
             </div>
           </TabPanel>
         </div>
@@ -153,6 +188,7 @@ export default function ScrollableTabsButtonAuto() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          padding-bottom: 90px;
         }
         .table {
           max-width: 640px;
@@ -160,7 +196,7 @@ export default function ScrollableTabsButtonAuto() {
         }
         .title {
           font-weight: bold;
-          font-size: 30px;
+          font-size: 20px;
           line-height: 37px;
           letter-spacing: 0.25em;
           margin-bottom: 70px;

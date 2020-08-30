@@ -40,7 +40,7 @@ const Unicorn = () => {
         }
         h3 {
           font-weight: bold;
-          font-size: 30px;
+          font-size: 20px;
           line-height: 37px;
           letter-spacing: 0.25em;
           color: #ffffff;
